@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:id="@+id/nav_person"
+            android:title="Person"
+            android:icon="@drawable/ic_person"
+            />
+        <item
+            android:id="@+id/nav_message"
+            android:title="Message"
+            android:icon="@drawable/ic_message"
+            />
+
+    </group>
+
+    <item android:title="Controls">
+
+        <menu>
+            <item
+                android:id="@+id/send"
+                android:title="Setting"
+                android:icon="@drawable/ic_send"
+                />
+
+            <item
+                android:id="@+id/share"
+                android:title="Logout"
+                android:icon="@drawable/ic_share"
+                />
+        </menu>
+    </item>
+
+</menu>

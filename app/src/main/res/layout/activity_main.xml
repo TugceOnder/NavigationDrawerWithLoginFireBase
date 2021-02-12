@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="0dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:animateLayoutChanges="false"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="250dp"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.13"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#F5F5F5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/loginikon" />
+
+                    <EditText
+                        android:id="@+id/editEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:backgroundTint="#FFFFFF"
+                        android:elegantTextHeight="false"
+                        android:freezesText="false"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textColorLink="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="#F5F5F5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/passwordikon" />
+
+                    <EditText
+                        android:id="@+id/editPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_weight="1"
+                        android:background="#F5F5F5"
+                        android:backgroundTint="@color/white"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:hint="Parola"
+                        android:inputType="textPassword"
+                        android:textColorHint="#0B0A0A"
+                        android:textColorLink="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/forgetPassword"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:text="     Şifremi Unuttum"
+                    android:textColor="@color/black"
+                    android:textColorLink="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnGiris"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="true"
+                    android:text="Giriş Yap"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnLoginUyeol"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="true"
+                    android:text="  ÜYE OL"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textColorLink="#151515"
+                    android:textSize="14dp"
+                    android:textStyle="normal|bold"
+                    app:autoSizeMaxTextSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
